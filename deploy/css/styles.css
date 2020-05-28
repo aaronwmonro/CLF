@@ -317,6 +317,32 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-lg {
+      display: block; } }
+.content-spacing {
+  margin-top: 50px; }
+  @media (min-width: 768px) {
+    .content-spacing {
+      margin-top: 55px; } }
+  @media (min-width: 992px) {
+    .content-spacing {
+      margin-top: 700px; } }
+  @media (min-width: 1200px) {
+    .content-spacing {
+      margin-top: 100px; } }
 /* =============
     Typography
 ============= */
@@ -367,7 +393,12 @@ textarea {
   text-align: center; }
   @media (min-width: 768px) {
     #section-1 {
-      background-size: 150%; } }
+      background-size: 155%;
+      height: 58vh;
+      background-position: right top; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 100vh; } }
   #section-1 #section-1-content {
     display: inline-table;
     vertical-align: middle;
@@ -375,20 +406,66 @@ textarea {
     text-align: center;
     font-family: 'Marcellus', serif;
     color: white;
-    padding-top: 35%; }
+    padding-top: 150px; }
+    @media (min-width: 768px) {
+      #section-1 #section-1-content {
+        padding-top: 225px; } }
     #section-1 #section-1-content h2 {
       font-family: 'Muli';
-      font-weight: 200;
+      font-weight: 100;
       font-size: 2.5rem;
       line-height: 2.5rem; }
+      @media (min-width: 768px) {
+        #section-1 #section-1-content h2 {
+          font-size: 3.75rem;
+          line-height: 3.75rem; } }
+      @media (min-width: 992px) {
+        #section-1 #section-1-content h2 {
+          font-size: 4.375rem;
+          line-height: 4.375rem; } }
     #section-1 #section-1-content h1 {
       color: #F2B705;
       font-size: 2.1875rem;
       line-height: 2.5rem; }
-
+      @media (min-width: 768px) {
+        #section-1 #section-1-content h1 {
+          font-size: 3.125rem;
+          line-height: 3.75rem;
+          width: 600px; } }
+      @media (min-width: 992px) {
+        #section-1 #section-1-content h1 {
+          font-size: 4.375rem;
+          line-height: 4.375rem;
+          width: 700px; } }
 /* =============
     Section-2
 ============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-template-areas: ". section-2-content .";
+  margin: 60px 0px; }
+  @media (min-width: 768px) {
+    #section-2 {
+      grid-template-columns: auto 600px auto; } }
+  @media (min-width: 992px) {
+    #section-2 {
+      grid-template-columns: auto 700px auto; } }
+  #section-2 #section-2-content {
+    grid-area: section-2-content;
+    text-align: center; }
+    #section-2 #section-2-content h2 {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.5625rem;
+      font-weight: 200;
+      color: #F22D2D; }
+      #section-2 #section-2-content h2 span {
+        font-family: 'Marcellus', serif;
+        color: #F2B705; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content h2 {
+          font-size: 1.875rem;
+          line-height: 2.5rem; } }
 /* =============
     Section-3
 ============= */
@@ -432,6 +509,13 @@ textarea {
 /* =============
     Section-6
 ============= */
+#section-6 #section-6-image {
+  background-image: url("../img/section-6/section-6.jpg");
+  background-size: 145%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 300px; }
+
 /* =============
     Section-7
 ============= */

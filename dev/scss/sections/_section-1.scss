@@ -10,8 +10,18 @@
     text-align: center;
 
     @include md{
-        background-size: 150%;
+        background-size: 155%;
+        height: 58vh;
+        background-position: right top;
+
     }
+    @include lg{
+        
+        height: 100vh;
+       
+
+    }
+
    
     #section-1-content{
         display: inline-table;
@@ -20,17 +30,42 @@
         text-align: center;
         font-family: 'Marcellus', serif;
         color: white;
+        padding-top: 150px;
 
-        padding-top: 35%;
+        @include md{
+            padding-top: 225px;
+
+        }
         
         h2{ font-family: 'Muli';
-            font-weight: 200;
+            font-weight: 100;
             font-size:rem-calc(40) ;
             line-height: rem-calc(40);
+
+            @include md{
+                font-size:rem-calc(60) ;
+            line-height: rem-calc(60);
+            }
+            @include lg{
+                font-size:rem-calc(70) ;
+            line-height: rem-calc(70);
+            }
         }
         h1{ color: #F2B705;
             font-size:rem-calc(35) ;
             line-height: rem-calc(40);
+            
+            @include md{
+            font-size:rem-calc(50) ;
+            line-height: rem-calc(60);
+            width: 600px;
+            }
+            
+            @include lg{
+                font-size:rem-calc(70) ;
+            line-height: rem-calc(70);
+            width: 700px;
+            }
         }
 
     }
