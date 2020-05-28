@@ -1,3 +1,29 @@
 /* =============
     Section-3
 ============= */
+#section-3{
+
+    #section-3-image-1{
+        grid-area: g1;
+        background-image: url('../img/section-3/section-3-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+
+
+    }
+
+    #section-3-image-2{
+        grid-area: g1;
+        background-image: url('../img/section-3/section-3-2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+
+
+    }
+
+    
+}
