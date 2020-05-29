@@ -115,7 +115,7 @@
 		"oAP": "/deploy/img/section-7/section-7-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-7/section-7-2.jpg": {
@@ -126,7 +126,7 @@
 		"oAP": "/deploy/img/section-7/section-7-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-7/section-7-3.jpg": {
@@ -137,7 +137,7 @@
 		"oAP": "/deploy/img/section-7/section-7-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-8/section-8-1.jpg": {

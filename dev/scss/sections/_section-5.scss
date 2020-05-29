@@ -1,14 +1,36 @@
 /* =============
     Section-5
 ============= */
-#section-5{
+#section-5{ 
+    
+    #section-5-content{
+        padding: 20px 0;
+        border-top: solid;
+        border-bottom: solid;
+        border-width: 2px;
+        border-color: #F22D2D;
+        grid-area: content;
+        #section-5-hero{
+            background-image: url('../img/section-5/section-5.jpg');
+            background-position: center top ;
+            background-repeat: no-repeat;
+            background-size: 175%;
+            height: 300px;
+        
+    
+            @include md{
+                height: 50vh;
+                
+            }
 
-    #section-5-hero{
-        background-image: url('../img/section-5/section-5.jpg');
-        background-position: center top ;
-        background-repeat: no-repeat;
-        background-size: 175%;
-        height: 300px;
+            @include lg{
+                height: 70vh;
+                background-size: 100%;
+                
+            }
 
+    
+        }
     }
+
 }

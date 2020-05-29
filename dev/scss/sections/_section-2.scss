@@ -9,9 +9,11 @@
 
     @include md{
         grid-template-columns: auto 600px auto;
+        margin: 80px 0;
     }
     @include lg{
-        grid-template-columns: auto 700px auto;
+        grid-template-columns: auto 600px auto;
+        margin: 100px 0;
     }
     
 #section-2-content{
@@ -22,6 +24,7 @@
         font-size: rem-calc(25);
         font-weight: 200;
         color: #F22D2D;
+        line-height: rem-calc(35);
 
         span{
             font-family: 'Marcellus', serif;
@@ -29,8 +32,12 @@
         }
 
         @include md{
-            font-size: rem-calc(30);
+            font-size: rem-calc(37);
             line-height: rem-calc(40);
+        }
+        @include lg{
+            font-size: rem-calc(40);
+            line-height: rem-calc(50);
         }
     }
     
