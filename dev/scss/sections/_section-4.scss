@@ -43,20 +43,20 @@
         p{
             border-top: solid;
             border-width: 2px;
-            border-color:white ;
+            border-color:#F22D2D;
             text-align: justify;
             padding: 10px 0 20px;
             font-family: 'Muli', sans-serif;
             font-weight: 200;
             line-height: rem-calc(25);
             font-size: rem-calc(16);
-            color: #F22D2D;
+            color: black;
 
             @include md{
             border-left: solid;
             border-width: 2px;
             padding: 10px 0 0 20px;
-            border-color:white ;
+            border-color:#F22D2D ;
             }
 
             @include lg{
@@ -67,7 +67,7 @@
                 border-width: 2px;
                 padding-left: 20px;
                 padding-right: 0;
-                border-color:white ;
+                border-color:#F22D2D ;
             }
 
         }

@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/footer.jpg": {
+		"ft": 16384,
+		"iS": 1296748,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-1/section-1.jpg": {
 		"ft": 16384,
 		"iS": 567032,
@@ -198,6 +209,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/design/structure-tags.sketch",
+		"oF": 0
+		},
+	"/dev/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/footer.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {

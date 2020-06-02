@@ -1,3 +1,63 @@
 /* =============
     Section-10
 ============= */
+#section-10{
+
+    @include lg{
+        display: grid;
+        grid-template-columns: auto 900px auto;
+        grid-template-areas: ". section-10-container .";
+    }
+
+    #section-10-container{
+        grid-area: section-10-container;
+        margin: 60px 0;
+        gap: 20px;
+
+        @include md{
+            margin: 80px 0;
+            display: grid;
+            grid-template-columns:auto 50%;
+            grid-template-areas: "g2 g1";
+        }
+       
+
+        @include lg{
+            margin: 100px 0;
+        }
+
+        #section-10-1{
+            grid-area: g1;
+            background-image: url('../img/section-10/section-10-1.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            margin-bottom: 20px;
+            
+            @include md{ height: 30vh;
+                background-position:left;
+                margin-bottom: 0px;
+            }
+
+            @include lg{ height: 50vh;
+                background-position:top left;
+            }
+
+        }
+
+        #section-10-2{
+            grid-area: g2;
+            background-image: url('../img/section-10/section-10-2.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+
+            @include md{ height: 30vh;}
+            @include lg{ height: 50vh;
+            }
+        }
+    }
+
+}
