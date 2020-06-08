@@ -79,6 +79,12 @@
     }
 }
 #section-3-image-1{
+    background-image: url('../img/section-3/section-3.png');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include md{
     grid-area: g2;
     background-image: url('../img/section-3/section-3-2.jpg');
     background-position: bottom;
@@ -95,22 +101,20 @@
 @include lg{
     margin: 0 20px 0 0 ;
 }
+    }
 
 }
 
 #section-3-image-2{
-    grid-area: g1;
-    background-image: url('../img/section-3/section-3-1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    
+  
     @include md{
-    height: auto;
-    background-position: right;
-   
-
+        grid-area: g1;
+        background-image: url('../img/section-3/section-3-1.jpg');
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        background-position: right;
     }
 }
 

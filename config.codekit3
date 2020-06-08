@@ -7,7 +7,7 @@
 		"uuidString": "9978CF9C-C9C1-4C7C-BC5C-CF83EB632B37"
 		}
 	],
-"creatorBuild": "32147",
+"creatorBuild": "32186",
 "files": {
 	"/deploy/css/styles.css": {
 		"aP": 1,
@@ -30,6 +30,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/footer/footer.png": {
+		"ft": 32768,
+		"iS": 1762368,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/footer/footer2.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-1/section-1.jpg": {
 		"ft": 16384,
 		"iS": 567032,
@@ -39,6 +61,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/section-1/section-1.png": {
+		"ft": 32768,
+		"iS": 1731125,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/section-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-10/section-10-1-mobile.png": {
+		"ft": 32768,
+		"iS": 658827,
+		"oA": 0,
+		"oAP": "/deploy/img/section-10/section-10-1-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-10/section-10-1.jpg": {
@@ -52,6 +96,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-10/section-10-1.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-10/section-10-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-10/section-10-2.jpg": {
 		"ft": 16384,
 		"iS": 177513,
@@ -61,6 +116,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/section-10/section-10-2.png": {
+		"ft": 32768,
+		"iS": 421100,
+		"oA": 0,
+		"oAP": "/deploy/img/section-10/section-10-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/section-3-1.jpg": {
@@ -83,6 +149,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/section-3.png": {
+		"ft": 32768,
+		"iS": 1545976,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/section-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/section-4.jpg": {
@@ -218,6 +295,14 @@
 		"oA": 1,
 		"oAP": "/dev/footer.html",
 		"oF": 0
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
+		"oF": 1
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -1162,6 +1247,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"default-param-last": {
 			"active": 0,
 			"optionString": ""
@@ -1574,6 +1663,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-loss-of-precision": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
@@ -1689,6 +1782,10 @@
 		"no-regex-spaces": {
 			"active": 1,
 			"optionString": ""
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
@@ -1833,6 +1930,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,

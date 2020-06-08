@@ -45,7 +45,9 @@
                     font-family: 'Asul', sans-serif;
                     font-size: rem-calc(30);
                     color:#F22D2D;
-                    
+                    @include md{
+                        padding-left: 20px;
+                    }
         
                     @include lg{
                         font-size: rem-calc(35);
@@ -68,6 +70,8 @@
                         border-left: solid;
                         border-color:#F22D2D ;
                         padding-left: 20px;
+                        margin-bottom: -20px;
+                        padding-right: 0px;
                         
                     }
         
