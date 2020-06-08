@@ -1,78 +1,83 @@
 /* =============
     Footer
 ============= */
-#footer{   margin-top: 100px;
+#footer {
+    margin-top: 100px;
     background-image: url('../img/footer/footer.png');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 30vh;
     display: grid;
     grid-template-columns: auto 300px auto;
     grid-template-areas: ". foot .";
-    
-    
-   @include md{ background-position: top;}
 
-    @include lg{
-        height: 50vh;
-      
+
+    @include md {
+        background-position: top;
     }
 
-    #footer-content{
+    @include lg {
+        height: 50vh;
+
+    }
+
+    #footer-content {
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: "logos add";
         grid-area: foot;
-        
-        
-        
-        #logo-container{
-            
-             grid-area: logos;
-             margin: 10px;
-            
-             ul{ 
-                 display: flex;
-                 justify-content: flex-start;
-                 color: white;
-                 font-size: rem-calc(30);
- 
-                
-     
-                 li{
-                     margin: 0 10px;
-                     
-      
-                 }
-                  
-         
-             }
-             
 
-         }
 
-         #address{
-             text-align: right;
-             grid-area: add;
-            h2{
-        font-family: 'Marcellus', serif;
-        color: white;
-        font-size: rem-calc(21);
-        width: 300px;
 
-        span{
-            font-family: 'Muli', san-serif;
-            font-weight: 100;
-        }
+        #logo-container {
+
+            grid-area: logos;
+            margin: 10px;
+
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                color: white;
+                font-size: rem-calc(30);
+
+
+
+                li {
+                    margin: 0 10px;
+
+
+                }
+
+
             }
-           h3{
-            font-family: 'Muli', san-serif;
-            font-weight: 300;
-            color: white;
-           } 
 
-         }
+
+        }
+
+        #address {
+            text-align: right;
+            grid-area: add;
+
+            h2 {
+                font-family: 'Marcellus', serif;
+                color: white;
+                font-size: rem-calc(21);
+                width: 300px;
+
+                span {
+                    font-family: 'Muli', san-serif;
+                    font-weight: 100;
+                }
+            }
+
+            h3 {
+                font-family: 'Muli', san-serif;
+                font-weight: 300;
+                color: white;
+            }
+
+        }
 
     }
 
