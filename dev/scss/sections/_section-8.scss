@@ -62,7 +62,8 @@
                 border-width: 2px;
                 border-color:  #F22D2D ;
                 text-align: justify;
-                padding: 10px 20px 0;
+                margin: 0 20px;
+                padding: 10px 0 0 0;
                 font-family: 'Muli', sans-serif;
                 font-weight: 200;
                 line-height: rem-calc(25);
@@ -73,7 +74,8 @@
                 border-width: 2px;
                 border-color:  #F22D2D ;
                 padding-right: 20px;
-                margin-right: 20px;
+                margin: 0 20px 0 -20px;
+                padding-left: 20px;
     
                 }
     

@@ -401,6 +401,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/dev/scss/components/_videoPlayer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_videoPlayer.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/dev/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -596,6 +609,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/dev/scss/sections/_video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_video.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -696,6 +722,14 @@
 		"oA": 1,
 		"oAP": "/dev/section-9.html",
 		"oF": 0
+		},
+	"/dev/video.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/video.html",
+		"oF": 1
 		}
 	},
 "hooks": [

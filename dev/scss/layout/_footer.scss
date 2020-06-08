@@ -8,8 +8,8 @@
     background-repeat: no-repeat;
     height: 30vh;
     display: grid;
-    grid-template-columns: 20px auto 20px;
-    grid-template-areas: ". grid .";
+    grid-template-columns: auto 300px auto;
+    grid-template-areas: ". foot .";
     
     
    @include md{ background-position: top;}
@@ -22,7 +22,8 @@
     #footer-content{
         display: grid;
         grid-template-columns: 60% auto;
-        grid-template-areas: " logos add";
+        grid-template-areas: "logos add";
+        grid-area: foot;
         
         
         
