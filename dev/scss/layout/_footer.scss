@@ -1,85 +1,91 @@
 /* =============
     Footer
 ============= */
-#footer {
-    margin-top: 100px;
-    background-image: url('../img/footer/footer.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
-    display: grid;
-    grid-template-columns: auto 300px auto;
-    grid-template-areas: ". foot .";
-
-
-    @include md {
-        background-position: top;
-    }
-
-    @include lg {
-        height: 50vh;
-
-    }
-
-    #footer-content {
-        display: grid;
-        grid-template-columns: 60% auto;
-        grid-template-areas: "logos add";
-        grid-area: foot;
-
-
-
-        #logo-container {
-
-            grid-area: logos;
-            margin: 10px;
-
-            ul {
-                display: flex;
-                justify-content: flex-start;
-                color: white;
-                font-size: rem-calc(30);
-
-
-
-                li {
-                    margin: 0 10px;
-
-
-                }
-
-
-            }
-
-
-        }
-
-        #address {
-            text-align: right;
-            grid-area: add;
-
-            h2 {
-                font-family: 'Marcellus', serif;
-                color: white;
-                font-size: rem-calc(21);
-                width: 300px;
-
-                span {
-                    font-family: 'Muli', san-serif;
-                    font-weight: 100;
-                }
-            }
-
-            h3 {
-                font-family: 'Muli', san-serif;
-                font-weight: 300;
-                color: white;
-            }
-
-        }
-
-    }
-
-
+footer {
+	background-image: url("../img/footer/footer.png");
+	background-position: center;
+	background-size: cover;
+	height: 31vh;
+	margin: 60px 0 0;
+	@include md {
+		background-position: top;
+		height: 100%;
+		margin: 80px 0 0;
+	}
+	@include lg {
+		display: grid;
+		grid-template-areas: ". footer .";
+		grid-template-columns: auto 1000px auto;
+	}
+	#footer-container {
+		color: white;
+		display: grid;
+		grid-template-columns: 50% auto;
+		padding-bottom: 10px;
+		position: relative;
+		@include lg {
+			grid-area: footer;
+		}
+		#social {
+			padding: 20vh 0px 0px 20px;
+			@include md {
+				padding-top: 25vh;
+			}
+			ul {
+				display: flex;
+				height: 100%;
+				justify-content: flex-start;
+				li {
+					font-size: rem-calc(23);
+					margin-right: 20px;
+					@include md {
+						font-size: rem-calc(40);
+						padding-right: 15px;
+					}
+					a:link,
+                    a:visited {
+						color: white;
+					}
+				}
+			}
+		}
+		#footer-title {
+			align-items: flex-end;
+			display: flex;
+			height: 100%;
+			justify-content: flex-end;
+			padding-right: 15px;
+			div {
+				article {
+					margin-bottom: 15px;
+					text-align: right;
+					h1 {
+						font-family: 'Marcellus', serif;
+						font-size: rem-calc(20);
+						font-weight: 700;
+						@include md {
+							font-size: rem-calc(35);
+							line-height: rem-calc(40);
+						}
+					}
+					h1:nth-child(1) {
+						font-family: 'Muli', sans-serif;
+						font-weight: 300;
+					}
+				}
+				address {
+					font-family: 'Muli', sans-serif;
+					font-size: rem-calc(16);
+					font-weight: 400;
+					line-height: rem-calc(20);
+					margin-bottom: 10px;
+					text-align: right;
+					@include md {
+						font-size: rem-calc(20);
+						line-height: rem-calc(25);
+					}
+				}
+			}
+		}
+	}
 }

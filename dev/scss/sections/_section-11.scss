@@ -1,238 +1,209 @@
 /* =============
     Section-11
 ============= */
-#section-11{
-    @include md{display: grid;
-        grid-template-columns: auto 600px auto;
-        grid-template-areas: ". section-11-container .";}
-
-    #section-11-container{
-        margin: 0 20px;
-       grid-area: section-11-container;
-
-       @include md{
-           display: grid;
-           grid-template-columns: 40% auto;
-           grid-template-areas: 
-           "title title"
-           "p1 p1"
-            "type message"
-            "info info"
-            "submit submit"
-           ;
-       }
-
-        h1{grid-area: title;
-            margin: 0 0 10px ;
-            font-family: 'Asul', sans-serif;
-            font-size: rem-calc(30);
-            color:#F22D2D;
-            text-align: center;
-                
-            @include lg{
-                font-size: rem-calc(35);
-            } 
-        }
-
-        p{grid-area: p1;
+#section-11 {
+	@include md {
+		display: grid;
+		grid-template-areas: ". section-11-container .";
+		grid-template-columns: auto 600px auto;
+	}
+	#section-11-container {
+		grid-area: section-11-container;
+		margin: 0 20px;
+		@include md {
+			display: grid;
+			grid-template-areas: "title title"
+                "p1 p1"
+                "type message"
+                "info info"
+                "submit submit";
+			grid-template-columns: 40% auto;
+		}
+		h1 {
+			color: #F22D2D;
+			font-family: 'Asul', sans-serif;
+			font-size: rem-calc(22);
+			grid-area: title;
+			margin: 0 0 10px;
+			text-align: center;
+			@include lg {
+				font-size: rem-calc(27);
+			}
+		}
+		p {
             border-top: solid;
-            border-width: 2px;
-            border-color:  #F22D2D ;
-            text-align: center;
-            padding: 10px 0 0;
-            font-family: 'Muli', sans-serif;
-            font-weight: 200;
-            line-height: rem-calc(25);
-            font-size: rem-calc(20);
-        }
-
-        #type{
-            grid-area: type;
-           
-            ul{
-            display:grid ;
-            grid-template-columns: 20px auto 20px auto;
-            grid-template-areas: 
-            "gb gn gb2 gt"
-            "eb er sb sb1"
-            ;
-            gap: 10px;
-
-            @include md{
-                font-size: rem-calc(20); 
-                padding-left: 20px;
-                display:grid ;
-                grid-template-columns: 140px 20px;
-                grid-template-areas: 
-                "gn gb"
-                "gt gb2"
-                "er eb"
-                "sb1 sb"
-                ;
-                margin: 20px 0 0 0;
-                
-            }
-                h3{
-            font-family: 'Muli', sans-serif;
-            font-weight: 200;
-            line-height: rem-calc(25);
-            text-align: left;
-            padding-left: 10px;
-            font-size: rem-calc(16); 
-            @include md{
-                text-align: right; 
-                padding-right: 10px;
-                font-size: rem-calc(20); 
-
-            }
-                }
-
-                .boxs{
-                    border: solid;
-                    border-width: 2px;
-                    border-color: #F09005;
-                    height: 20px;
-                    width: 20px;
-
-
-                    @include md{
-                    height: 30px;
-                    width: 30px;
-                    margin-bottom: 13px;
-                    }
-
-                }
-                #general-box{
-                    grid-area: gb ;
-                }
-
-                #group-box{
-                    grid-area: gb2 ;
-                }
-
-                #event-box{
-                    grid-area: eb ;
-                }
-                #sponorship-box{
-                    grid-area: sb ;
-                }
-
-                #general{
-                    grid-area: gn;
-                }
-                #group{
-                    grid-area: gt;
-                }
-                #event{
-                    grid-area: er;
-                }
-                #sponorship{
-                    grid-area: sb1;
-                }
-            }
-        }
-
-        #message{grid-area: message;
-            height: 200px;
-            border-top: solid;
+			border-color: #F22D2D;
+			border-width: 2px;
+			font-family: 'Muli', sans-serif;
+			font-size: rem-calc(20);
+			font-weight: 200;
+			grid-area: p1;
+			line-height: rem-calc(25);
+			padding: 10px 0 0;
+			text-align: center;
+		}
+		#type {
+			grid-area: type;
+			ul {
+				display: grid;
+				gap: 10px;
+				grid-template-areas: "gb gn gb2 gt"
+                    "eb er sb sb1";
+				grid-template-columns: 20px auto 20px auto;
+				@include md {
+					display: grid;
+					font-size: rem-calc(20);
+					grid-template-areas: "gn gb"
+                        "gt gb2"
+                        "er eb"
+                        "sb1 sb";
+					grid-template-columns: 140px 20px;
+					margin: 20px 0 0 0;
+					padding-left: 20px;
+				}
+				h3 {
+					font-family: 'Muli', sans-serif;
+					font-size: rem-calc(16);
+					font-weight: 200;
+					line-height: rem-calc(25);
+					padding-left: 10px;
+					text-align: left;
+					@include md {
+						font-size: rem-calc(20);
+						padding-right: 10px;
+						text-align: right;
+					}
+				}
+				.boxs {
+					border: solid;
+					border-color: #F09005;
+					border-width: 2px;
+					height: 20px;
+					width: 20px;
+					@include md {
+						height: 30px;
+						margin-bottom: 13px;
+						width: 30px;
+					}
+				}
+				#general-box {
+					grid-area: gb;
+				}
+				#group-box {
+					grid-area: gb2;
+				}
+				#event-box {
+					grid-area: eb;
+				}
+				#sponorship-box {
+					grid-area: sb;
+				}
+				#general {
+					grid-area: gn;
+				}
+				#group {
+					grid-area: gt;
+				}
+				#event {
+					grid-area: er;
+				}
+				#sponorship {
+					grid-area: sb1;
+				}
+			}
+		}
+		#message {
             border-left: solid;
-            border-bottom: solid;
-            border-width: 2px;
-            border-color:  #F22D2D ;
-            h3{
-                font-family: 'Muli', sans-serif;
-                font-weight: 200;
-                font-size: rem-calc(20);  
-                padding: 20px 0 0 20px;
-            }
-
-            @include md{
-                margin-top: 20px;
-            }
-        }
-
-        #info{
-            grid-area: info;
-            display: grid;
-            grid-template-columns: auto 200px auto;
-            grid-template-areas: ". info-list .";
-
-            @include md{
-                display: grid;
-            grid-template-columns: auto 600px auto;
-            grid-template-areas: ". info-list .";
-            }
-            
-            ul{grid-area: info-list;
-
-                @include md{
-                    display: grid;
-                    grid-template-columns: auto auto auto;
-                    grid-template-areas: "yn ye pn";
-                    gap: 20px;
-                }
-                
-                li{
-                margin-bottom: 20px;
-                border-top: solid;
-                border-left: solid;
-                border-bottom: solid;
-                border-width: 2px;
-                border-color: #F09005 ;
-                height: 50px;
-                width: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @include md{
-                    width: 185px;
-                }
-                h3{
-                font-family: 'Muli', sans-serif;
-                font-weight: 200;
-                line-height: rem-calc(16);
-                text-align: left;
-                padding-left: 10px;
-                font-size: rem-calc(16);
-                }
-                
-                }
-
-                #phone{
-                margin-bottom: 0;
-                grid-area: pn;
-                }
-                #name{
-                grid-area: yn;
-                }
-                #email{
-                grid-area: ye;
-                }
-
-            }
-        }
-
-        #submit{grid-area: submit;
-            display: grid;
-            grid-template-columns: auto 250px auto;
-            grid-template-areas: ". submit-button .";
-            h2{font-family: 'Asul', sans-serif;
-                font-size: rem-calc(25);
-                color:#F22D2D;
-                text-align: center;
-                border: solid;
-                border-width: 4px;
-                border-color:  #F22D2D ;
-                display: flex;
-                justify-content: center;
-                    align-items: center;
-                    height: 50px;
-                    width: 250px;
-                    grid-area: submit-button ;
-                    
-            }
-        }
-    }
-
+			border-top: solid;
+			border-bottom: solid;
+			border-color: #F22D2D;
+			border-width: 2px;
+			grid-area: message;
+			height: 200px;
+			h3 {
+				font-family: 'Muli', sans-serif;
+				font-size: rem-calc(20);
+				font-weight: 200;
+				padding: 20px 0 0 20px;
+			}
+			@include md {
+				margin-top: 20px;
+			}
+		}
+		#info {
+			display: grid;
+			grid-area: info;
+			grid-template-areas: ". info-list .";
+			grid-template-columns: auto 200px auto;
+			@include md {
+				display: grid;
+				grid-template-areas: ". info-list .";
+				grid-template-columns: auto 600px auto;
+			}
+			ul {
+				grid-area: info-list;
+				@include md {
+					display: grid;
+					gap: 20px;
+					grid-template-areas: "yn ye pn";
+					grid-template-columns: auto auto auto;
+				}
+				li {
+					align-items: center;
+                    border-bottom: solid;
+                    border-left: solid;
+					border-top: solid;
+					border-color: #F09005;
+					border-width: 2px;
+					display: flex;
+					height: 50px;
+					justify-content: center;
+					margin-bottom: 20px;
+					width: 200px;
+					@include md {
+						width: 185px;
+					}
+					h3 {
+						font-family: 'Muli', sans-serif;
+						font-size: rem-calc(16);
+						font-weight: 200;
+						line-height: rem-calc(16);
+						padding-left: 10px;
+						text-align: left;
+					}
+				}
+				#phone {
+					grid-area: pn;
+					margin-bottom: 0;
+				}
+				#name {
+					grid-area: yn;
+				}
+				#email {
+					grid-area: ye;
+				}
+			}
+		}
+		#submit {
+			display: grid;
+			grid-area: submit;
+			grid-template-areas: ". submit-button .";
+			grid-template-columns: auto 250px auto;
+			h2 {
+				align-items: center;
+				border: solid;
+				border-color: #F22D2D;
+				border-width: 4px;
+				color: #F22D2D;
+				display: flex;
+				font-family: 'Asul', sans-serif;
+				font-size: rem-calc(25);
+				grid-area: submit-button;
+				height: 50px;
+				justify-content: center;
+				text-align: center;
+				width: 250px;
+			}
+		}
+	}
 }

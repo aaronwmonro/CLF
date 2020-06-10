@@ -1,60 +1,51 @@
 /* =============
     Section-9
 ============= */
-#section-9{
-    @include md{
-    display: grid;
-    grid-template-columns: auto 400px auto ;
-    grid-template-areas: ". section-9-container .";
-    }
-    
-    #section-9-container{
-        grid-area: section-9-container;
-        text-align: center;
-        margin: 0 20px;
-        
-        h1{
-            margin: 0 20px 10px ;
-            font-family: 'Asul', sans-serif;
-            font-size: rem-calc(35);
-            color:#F22D2D;
-                
-            @include lg{
-                font-size: rem-calc(35);
-            } 
-        }
-
-        h4{
-            font-family: 'Asul', sans-serif;
-            font-size: rem-calc(19);
-            color:#F22D2D;
+#section-9 {
+	@include md {
+		display: grid;
+		grid-template-areas: ". section-9-container .";
+		grid-template-columns: auto 400px auto;
+	}
+	#section-9-container {
+		grid-area: section-9-container;
+		margin: 0 20px;
+		text-align: center;
+		h1 {
+			color: #F22D2D;
+			font-family: 'Asul', sans-serif;
+			font-size: rem-calc(25);
+			margin: 0 20px 10px;
+			@include lg {
+				font-size: rem-calc(27);
+			}
+		}
+		h4 {
             border-top: solid;
-            border-width: 2px;
-            border-color:  #F22D2D ;
-            padding: 10px 0 0;
-        }
-
-        h2{
-            font-family: 'Muli', sans-serif;
-            font-weight: 200;
-            line-height: rem-calc(35);
-            font-size: rem-calc(40);
-            padding: 10px 0 0;
-
-        }
-
-        p{
-            font-family: 'Muli', sans-serif;
-            font-weight: 200;
-            line-height: rem-calc(25);
-            font-size: rem-calc(16);
-            padding: 10px 0 0;
-
-            @include md{
-                line-height: rem-calc(35);
-                font-size: rem-calc(19);}
-        }
-
-    }
-
+            border-color: #F22D2D;
+			border-width: 2px;
+			color: #F22D2D;
+			font-family: 'Asul', sans-serif;
+			font-size: rem-calc(16);
+			padding: 10px 0 0;
+		}
+		h2 {
+			font-family: 'Muli', sans-serif;
+			font-size: rem-calc(30);
+			font-weight: 200;
+			line-height: rem-calc(35);
+			padding: 10px 0 0;
+		}
+		p {
+			font-family: 'Muli', sans-serif;
+			font-size: rem-calc(16);
+			font-weight: 200;
+			line-height: rem-calc(25);
+			padding: 10px 0 0;
+			@include md {
+				font-size: rem-calc(19);
+				line-height: rem-calc(35);
+			}
+		}
+	}
 }

@@ -1,75 +1,62 @@
 /* =============
     Section-10
 ============= */
-#section-10{
-
-    @include lg{
-        display: grid;
-        grid-template-columns: auto 900px auto;
-        grid-template-areas: ". section-10-container .";
-    }
-
-    #section-10-container{
-        grid-area: section-10-container;
-        margin: 60px 0;
-        gap: 20px;
-
-        @include md{
-            margin: 80px 0;
-            display: grid;
-            grid-template-columns:auto 50%;
-            grid-template-areas: "g2 g1";
-            
-        }
-       
-
-        @include lg{
-            margin: 100px 0;
-        }
-
-        #section-10-1{
-            background-image: url('../img/section-10/section-10-1-mobile.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 600px;
-            margin: 0 20px 20px;
-
-            
-            @include md{ height: 30vh;
-                background-position:left;
-                margin: 0px;
-                grid-area: g1;
-                background-image: url('../img/section-10/section-10-1.png');
-                background-position: left;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-left: -190px;
-            
-            }
-
-            @include lg{ height: 55vh;
-               background-position: left;
-                margin-left: -230px;
-            }
-
-        }
-
-        #section-10-2{
-           
-
-            @include md{ height: 30vh;
-                grid-area: g2;
-                background-image: url('../img/section-10/section-10-2.png');
-                background-position: right;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin-right: -190px;
-                }
-            @include lg{ height: 55vh;
-                margin-right: -230px;
-            }
-        }
-    }
-
+#section-10 {
+	@include lg {
+		display: grid;
+		grid-template-areas: ". section-10-container .";
+		grid-template-columns: auto 900px auto;
+	}
+	#section-10-container {
+		gap: 20px;
+		grid-area: section-10-container;
+		margin: 60px 0;
+		@include md {
+			display: grid;
+			grid-template-areas: "g2 g1";
+			grid-template-columns: auto 50%;
+			margin: 80px 0;
+		}
+		@include lg {
+			margin: 100px 0;
+		}
+		#section-10-1 {
+			background-image: url('../img/section-10/section-10-1-mobile.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 600px;
+			margin: 0 20px 20px;
+			@include md {
+				background-image: url('../img/section-10/section-10-1.png');
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: cover;
+				grid-area: g1;
+				height: 30vh;
+				margin: 0px;
+				margin-left: -190px;
+			}
+			@include lg {
+				background-position: left;
+				height: 55vh;
+				margin-left: -230px;
+			}
+		}
+		#section-10-2 {
+			@include md {
+				background-image: url('../img/section-10/section-10-2.png');
+				background-position: right;
+				background-repeat: no-repeat;
+				background-size: cover;
+				grid-area: g2;
+				height: 30vh;
+				margin-right: -190px;
+			}
+			@include lg {
+				height: 55vh;
+				margin-right: -230px;
+			}
+		}
+	}
 }
